@@ -75,3 +75,19 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+// Birthday Auto Check
+val daysLeft =
+    com.sixyears.onestory.countdown.CountdownManager
+        .getDaysUntilBirthday(6,25)
+
+if(daysLeft == 0L){
+
+    startActivity(
+        Intent(
+            this,
+            BirthdayActivity::class.java
+        )
+    )
+
+    finish()
+}

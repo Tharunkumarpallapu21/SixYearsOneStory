@@ -9,15 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🎁 Final Surprise ❤️"
-            android:textSize="30sp"
+            android:text="❤️ 6 Years One Story ❤️"
+            android:textSize="32sp"
             android:textStyle="bold"/>
 
         <TextView
@@ -26,8 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:gravity="center"
-            android:textSize="20sp"
-            android:lineSpacingExtra="8dp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
