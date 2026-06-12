@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFF0F3">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <com.sixyears.onestory.customviews.FloatingHeartsView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="24dp">
+        android:layout_height="match_parent"/>
 
-        <TextView
-            android:id="@+id/txtCountdown"
-            android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
-            android:textStyle="bold"/>
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-        <Button
-            android:id="@+id/btnLoveLetter"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="💌 Love Letter"
-            android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/txtCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
 
-        <Button
-            android:id="@+id/btnGallery"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="📸 Memories Gallery"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnLoveLetter"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="💌 Love Letter"
+                android:layout_marginTop="20dp"/>
 
-        <Button
-            android:id="@+id/btnReasons"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="❤️ 100 Reasons I Love You"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="📸 Memories Gallery"
+                android:layout_marginTop="10dp"/>
 
-        <Button
-            android:id="@+id/btnFinalSurprise"
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="🎁 Final Surprise"
-            android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnReasons"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="❤️ 100 Reasons I Love You"
+                android:layout_marginTop="10dp"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnFinalSurprise"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:text="🎁 Final Surprise"
+                android:layout_marginTop="10dp"/>
 
-</ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

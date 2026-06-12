@@ -29,33 +29,48 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        findViewById<TextView>(
-            R.id.txtCountdown
-        ).text =
+        findViewById<TextView>(R.id.txtCountdown)
+            .text =
             "${CountdownManager.getDaysUntilBirthday(6,25)} Days Left ❤️"
 
-        findViewById<Button>(
-            R.id.btnLoveLetter
-        ).setOnClickListener {
-            startActivity(
-                Intent(this, LoveLetterActivity::class.java)
-            )
-        }
+        findViewById<Button>(R.id.btnLoveLetter)
+            .setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        LoveLetterActivity::class.java
+                    )
+                )
+            }
 
-        findViewById<Button>(
-            R.id.btnGallery
-        ).setOnClickListener {
-            startActivity(
-                Intent(this, GalleryActivity::class.java)
-            )
-        }
+        findViewById<Button>(R.id.btnGallery)
+            .setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        GalleryActivity::class.java
+                    )
+                )
+            }
 
-        findViewById<Button>(
-            R.id.btnReasons
-        ).setOnClickListener {
-            startActivity(
-                Intent(this, ReasonsActivity::class.java)
-            )
-        }
+        findViewById<Button>(R.id.btnReasons)
+            .setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        ReasonsActivity::class.java
+                    )
+                )
+            }
+
+        findViewById<Button>(R.id.btnFinalSurprise)
+            .setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        FinalSurpriseActivity::class.java
+                    )
+                )
+            }
     }
 }
