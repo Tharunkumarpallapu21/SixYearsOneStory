@@ -2,24 +2,35 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     android:background="#FFF0F3">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/confettiAnimation"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="confetti.json"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🎉 HAPPY BIRTHDAY 🎉"
-        android:textSize="30sp"
+        android:text="🎂 Happy Birthday My Love ❤️"
+        android:textSize="28sp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="My Love ❤️"
-        android:textSize="24sp"/>
+        android:layout_marginTop="16dp"
+        android:text="Thank you for being part of my beautiful 6 year journey ❤️"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"/>
 
 </LinearLayout>
