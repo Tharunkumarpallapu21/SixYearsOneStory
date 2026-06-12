@@ -12,21 +12,17 @@ class ReasonsActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_reasons)
 
-        findViewById<TextView>(R.id.txtReasons).text = """
-❤️ 100 Reasons I Love You ❤️
+        val reasonsText =
+            findViewById<TextView>(R.id.txtReasons)
 
-1. Your smile
-2. Your kindness
-3. Your support
-4. Your honesty
-5. Your laughter
-6. Your patience
-7. Your confidence
-8. Your caring nature
-9. Your beautiful heart
-10. Because you are YOU ❤️
+        val builder = StringBuilder()
 
-...continue up to 100 reasons...
-        """.trimIndent()
+        builder.append("❤️ 100 Reasons I Love You ❤️\n\n")
+
+        for (i in 1..100) {
+            builder.append("$i. Because you make my life beautiful ❤️\n\n")
+        }
+
+        reasonsText.text = builder.toString()
     }
 }
