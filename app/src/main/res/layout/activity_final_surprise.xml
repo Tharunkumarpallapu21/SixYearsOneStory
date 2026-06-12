@@ -9,14 +9,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🎁 Final Surprise 🎁"
+            android:text="🎁 FINAL SURPRISE 🎁"
             android:textSize="32sp"
             android:textStyle="bold"/>
 
@@ -25,15 +25,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:text="For 6 beautiful years, you have been my happiness, my strength and my favorite person.
+            android:text="6 Years... Countless Memories ❤️
 
-Every memory with you is precious.
+Every smile...
+Every conversation...
+Every moment...
 
-No matter what happens, this story will always be special to me.
+Thank You For Everything ❤️
 
-Happy Birthday My Love ❤️
-
-Forever & Always ❤️"
+Happy Birthday My Love ❤️"
             android:textSize="20sp"/>
 
     </LinearLayout>
