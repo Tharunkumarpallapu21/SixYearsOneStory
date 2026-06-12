@@ -2,6 +2,7 @@ package com.sixyears.onestory.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.sixyears.onestory.R
@@ -21,14 +22,12 @@ class MainActivity : AppCompatActivity() {
         val day = calendar.get(Calendar.DAY_OF_MONTH)
 
         if (month == 6 && day == 25) {
-
             startActivity(
                 Intent(
                     this,
                     BirthdayActivity::class.java
                 )
             )
-
             finish()
             return
         }
@@ -46,8 +45,20 @@ class MainActivity : AppCompatActivity() {
 
         countdown.text =
             "$days Days Left ❤️"
+
+        val loveLetter =
+            findViewById<Button>(
+                R.id.btnLoveLetter
+            )
+
+        loveLetter.setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    LoveLetterActivity::class.java
+                )
+            )
+        }
     }
 }
-
-// WorkManager scheduling will be added in next phase
-
