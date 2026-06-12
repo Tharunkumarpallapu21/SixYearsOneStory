@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         val calendar = Calendar.getInstance()
 
-        val month = calendar.get(Calendar.MONTH) + 1
-        val day = calendar.get(Calendar.DAY_OF_MONTH)
-
-        if (month == 6 && day == 25) {
+        if (
+            calendar.get(Calendar.MONTH) + 1 == 6 &&
+            calendar.get(Calendar.DAY_OF_MONTH) == 25
+        ) {
             startActivity(
                 Intent(
                     this,
@@ -32,31 +32,31 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val countdown =
-            findViewById<TextView>(
-                R.id.txtCountdown
-            )
+        findViewById<TextView>(
+            R.id.txtCountdown
+        ).text =
+            "${CountdownManager.getDaysUntilBirthday(6,25)} Days Left ❤️"
 
-        val days =
-            CountdownManager.getDaysUntilBirthday(
-                6,
-                25
-            )
-
-        countdown.text =
-            "$days Days Left ❤️"
-
-        val loveLetter =
-            findViewById<Button>(
-                R.id.btnLoveLetter
-            )
-
-        loveLetter.setOnClickListener {
+        findViewById<Button>(
+            R.id.btnLoveLetter
+        ).setOnClickListener {
 
             startActivity(
                 Intent(
                     this,
                     LoveLetterActivity::class.java
+                )
+            )
+        }
+
+        findViewById<Button>(
+            R.id.btnGallery
+        ).setOnClickListener {
+
+            startActivity(
+                Intent(
+                    this,
+                    GalleryActivity::class.java
                 )
             )
         }
