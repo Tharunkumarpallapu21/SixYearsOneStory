@@ -18,16 +18,13 @@ class MainActivity : AppCompatActivity() {
 
         val calendar = Calendar.getInstance()
 
-        if (
-            calendar.get(Calendar.MONTH) + 1 == 6 &&
-            calendar.get(Calendar.DAY_OF_MONTH) == 25
-        ) {
+        if (calendar.get(Calendar.MONTH) + 1 == 6 &&
+            calendar.get(Calendar.DAY_OF_MONTH) == 25) {
+
             startActivity(
-                Intent(
-                    this,
-                    BirthdayActivity::class.java
-                )
+                Intent(this, BirthdayActivity::class.java)
             )
+
             finish()
             return
         }
@@ -40,24 +37,24 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(
             R.id.btnLoveLetter
         ).setOnClickListener {
-
             startActivity(
-                Intent(
-                    this,
-                    LoveLetterActivity::class.java
-                )
+                Intent(this, LoveLetterActivity::class.java)
             )
         }
 
         findViewById<Button>(
             R.id.btnGallery
         ).setOnClickListener {
-
             startActivity(
-                Intent(
-                    this,
-                    GalleryActivity::class.java
-                )
+                Intent(this, GalleryActivity::class.java)
+            )
+        }
+
+        findViewById<Button>(
+            R.id.btnReasons
+        ).setOnClickListener {
+            startActivity(
+                Intent(this, ReasonsActivity::class.java)
             )
         }
     }

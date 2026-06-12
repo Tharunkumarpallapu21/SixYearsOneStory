@@ -12,21 +12,28 @@
         android:id="@+id/txtCountdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="34sp"
+        android:textSize="32sp"
         android:textStyle="bold"/>
 
     <Button
         android:id="@+id/btnLoveLetter"
-        android:layout_width="220dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="💌 Love Letter"/>
+        android:text="💌 Love Letter"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/btnGallery"
-        android:layout_width="220dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="📸 Memories Gallery"/>
+        android:text="📸 Memories Gallery"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnReasons"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="❤️ 100 Reasons I Love You"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>
