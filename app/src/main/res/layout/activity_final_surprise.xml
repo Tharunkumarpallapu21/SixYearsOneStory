@@ -9,32 +9,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="24dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="🎁 FINAL SURPRISE 🎁"
-            android:textSize="32sp"
+            android:text="🎁 Final Surprise ❤️"
+            android:textSize="30sp"
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/txtFinalMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
-            android:text="6 Years... Countless Memories ❤️
-
-Every smile...
-Every conversation...
-Every moment...
-
-Thank You For Everything ❤️
-
-Happy Birthday My Love ❤️"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:lineSpacingExtra="8dp"/>
 
     </LinearLayout>
 
