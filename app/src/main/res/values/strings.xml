@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">6 Years One Story ❤️</string>
+
+    <string name="welcome_title">
+        Welcome My Love ❤️
+    </string>
+
+    <string name="birthday_countdown">
+        Birthday Countdown
+    </string>
+
+    <string name="our_story">
+        Our Story
+    </string>
+
+    <string name="love_letter">
+        Love Letter
+    </string>
+
+    <string name="gallery">
+        Memories Gallery
+    </string>
+
+    <string name="final_surprise">
+        Final Surprise
+    </string>
+
+</resources>
