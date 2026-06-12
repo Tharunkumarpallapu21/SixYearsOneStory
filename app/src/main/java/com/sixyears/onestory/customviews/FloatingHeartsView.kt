@@ -13,36 +13,49 @@ class FloatingHeartsView @JvmOverloads constructor(
     attrs: AttributeSet? = null
 ) : View(context, attrs) {
 
-    private val paint = Paint().apply {
-        color = Color.parseColor("#FF4D6D")
-        textSize = 60f
+    data class Heart(
+        var x: Float,
+        var y: Float,
+        var speed: Float,
+        var size: Float
+    )
+
+    private val hearts = MutableList(50) {
+        Heart(
+            Random.nextFloat() * 1200f,
+            Random.nextFloat() * 2200f,
+            Random.nextFloat() * 4f + 1f,
+            Random.nextFloat() * 40f + 40f
+        )
     }
 
-    private val hearts = MutableList(20) {
-        Heart(
-            Random.nextFloat() * 1000f,
-            Random.nextFloat() * 2000f
-        )
+    private val paint = Paint().apply {
+        color = Color.parseColor("#FF4D6D")
+        textAlign = Paint.Align.CENTER
     }
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
         hearts.forEach {
-            canvas.drawText("❤️", it.x, it.y, paint)
 
-            it.y -= 2f
+            paint.textSize = it.size
 
-            if (it.y < -50f) {
+            canvas.drawText(
+                "❤️",
+                it.x,
+                it.y,
+                paint
+            )
+
+            it.y -= it.speed
+
+            if (it.y < -100) {
                 it.y = height.toFloat()
+                it.x = Random.nextFloat() * width
             }
         }
 
         invalidate()
     }
-
-    data class Heart(
-        var x: Float,
-        var y: Float
-    )
 }
