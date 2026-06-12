@@ -12,13 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="❤️"
-        android:textSize="80sp"/>
+        android:textSize="100sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="6 Years One Story"
-        android:textSize="28sp"
+        android:textSize="30sp"
         android:textStyle="bold"/>
 
 </LinearLayout>

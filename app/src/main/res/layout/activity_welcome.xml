@@ -6,20 +6,22 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="24dp"
     android:background="#FFF0F3">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Good Morning My Love ❤️"
-        android:textSize="26sp"
+        android:textSize="28sp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Welcome to Our 6 Years Journey ✨"
+        android:gravity="center"
+        android:text="Welcome to our beautiful journey of 6 years ❤️"
         android:textSize="18sp"/>
 
 </LinearLayout>
