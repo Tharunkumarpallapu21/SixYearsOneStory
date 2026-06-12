@@ -16,26 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="💌 My Love Letter"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/txtLetter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="My Love,
-
-These six years have been the most beautiful chapter of my life.
-
-Every smile, every memory, every conversation and every moment with you has made my journey special.
-
-Thank you for standing beside me through happiness and challenges.
-
-No matter where life takes us, you will always have a special place in my heart.
-
-Happy Birthday My Love ❤️
-
-Forever Yours ❤️"
             android:textSize="18sp"
             android:lineSpacingExtra="8dp"/>
 
