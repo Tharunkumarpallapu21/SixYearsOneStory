@@ -17,11 +17,23 @@ jobs:
           distribution: temurin
           java-version: 17
       
-      - run: chmod +x gradlew
+      - name: List files for debugging
+        run: |
+          ls -la
+          ls -la app/ || echo "app folder not found"
+          ls -la gradle/wrapper/ || echo "gradle wrapper not found"
       
-      - run: ./gradlew assembleDebug
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+      
+      - name: Build debug APK with stack trace
+        run: ./gradlew assembleDebug --stacktrace --info
       
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/*.apk
+          name: build-logs
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            build/reports/
+            *.log
