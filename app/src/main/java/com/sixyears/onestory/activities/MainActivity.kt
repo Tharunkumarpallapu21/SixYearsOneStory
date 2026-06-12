@@ -48,3 +48,6 @@ class MainActivity : AppCompatActivity() {
             "$days Days Left ❤️"
     }
 }
+
+// WorkManager scheduling will be added in next phase
+
