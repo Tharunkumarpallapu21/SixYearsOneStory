@@ -9,6 +9,7 @@
         android:supportsRtl="true">
 
         <activity android:name=".activities.FinalSurpriseActivity"/>
+        <activity android:name=".activities.StoryActivity" />
         <activity android:name=".activities.ReasonsActivity"/>
         <activity android:name=".activities.GalleryActivity"/>
         <activity android:name=".activities.LoveLetterActivity"/>

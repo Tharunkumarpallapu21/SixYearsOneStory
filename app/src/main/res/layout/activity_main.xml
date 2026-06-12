@@ -60,6 +60,12 @@
 
             <Button
                 android:id="@+id/btnReasons"
+    <Button
+        android:id="@+id/btnTimeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="📖 Our Journey"/>
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
