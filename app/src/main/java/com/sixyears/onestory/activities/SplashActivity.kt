@@ -23,9 +23,13 @@ class SplashActivity : AppCompatActivity() {
                 )
             )
 
+            overridePendingTransition(
+                R.anim.fade_in,
+                R.anim.fade_out
+            )
+
             finish()
 
         }, 3000)
-
     }
 }

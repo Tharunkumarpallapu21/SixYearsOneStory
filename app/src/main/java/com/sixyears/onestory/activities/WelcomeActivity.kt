@@ -23,9 +23,13 @@ class WelcomeActivity : AppCompatActivity() {
                 )
             )
 
+            overridePendingTransition(
+                R.anim.slide_up,
+                R.anim.fade_out
+            )
+
             finish()
 
         }, 5000)
-
     }
 }
